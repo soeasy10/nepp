@@ -7,5 +7,7 @@ target 'FrameExtraction' do
 
   # Pods for FrameExtraction
   pod 'OpenCV', '~> 3.3.1'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Storage'
 
 end
