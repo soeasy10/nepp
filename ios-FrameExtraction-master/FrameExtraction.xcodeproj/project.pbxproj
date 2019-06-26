@@ -16,6 +16,7 @@
 		6590C85A206FEF5B00F5006B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6590C858206FEF5B00F5006B /* LaunchScreen.storyboard */; };
 		6590C862206FF0FB00F5006B /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6590C861206FF0FB00F5006B /* FrameExtractor.swift */; };
 		65A7A32A207022100014D8E1 /* FPSCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7A329207022100014D8E1 /* FPSCounter.swift */; };
+		671C178622C3E61300E122B8 /* dataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C178522C3E61300E122B8 /* dataCenter.swift */; };
 		C86455FCD8192EC1B094A10F /* Pods_FrameExtraction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E8DB3D3E00F16CC83C1F48 /* Pods_FrameExtraction.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		6590C85B206FEF5B00F5006B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6590C861206FF0FB00F5006B /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		65A7A329207022100014D8E1 /* FPSCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSCounter.swift; sourceTree = "<group>"; };
+		671C178522C3E61300E122B8 /* dataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataCenter.swift; sourceTree = "<group>"; };
 		79A16F5903AC4E03C5AF3E3D /* Pods-FrameExtraction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameExtraction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction.debug.xcconfig"; sourceTree = "<group>"; };
 		C1AC106BE80CEC0DDD5ADC1B /* Pods-FrameExtraction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameExtraction.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction.release.xcconfig"; sourceTree = "<group>"; };
 		C7E8DB3D3E00F16CC83C1F48 /* Pods_FrameExtraction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameExtraction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,11 +100,12 @@
 			children = (
 				650CD5622070341C00078BED /* Wrappers */,
 				6590C84F206FEF5B00F5006B /* AppDelegate.swift */,
-				6590C851206FEF5B00F5006B /* ViewController.swift */,
+				671C178522C3E61300E122B8 /* dataCenter.swift */,
 				6590C853206FEF5B00F5006B /* Main.storyboard */,
 				6590C856206FEF5B00F5006B /* Assets.xcassets */,
 				6590C858206FEF5B00F5006B /* LaunchScreen.storyboard */,
 				6590C85B206FEF5B00F5006B /* Info.plist */,
+				6590C851206FEF5B00F5006B /* ViewController.swift */,
 				6590C861206FF0FB00F5006B /* FrameExtractor.swift */,
 				65A7A329207022100014D8E1 /* FPSCounter.swift */,
 			);
@@ -130,7 +133,6 @@
 				6590C849206FEF5B00F5006B /* Frameworks */,
 				6590C84A206FEF5B00F5006B /* Resources */,
 				6CE1E3F04D32A8455D8FE935 /* [CP] Embed Pods Frameworks */,
-				82A78B49C11830404CA7DB1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,21 +210,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		82A78B49C11830404CA7DB1A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EF97D35057FEBFC02090E455 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +237,7 @@
 			files = (
 				65A7A32A207022100014D8E1 /* FPSCounter.swift in Sources */,
 				650CD5662070344500078BED /* OpenCVWrapper.mm in Sources */,
+				671C178622C3E61300E122B8 /* dataCenter.swift in Sources */,
 				6590C862206FF0FB00F5006B /* FrameExtractor.swift in Sources */,
 				650CD56E20703F0600078BED /* ios_conversions.mm in Sources */,
 				6590C852206FEF5B00F5006B /* ViewController.swift in Sources */,
@@ -393,7 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P84SM4WGSD;
+				DEVELOPMENT_TEAM = 9HB659H6D9;
 				INFOPLIST_FILE = FrameExtraction/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P84SM4WGSD;
+				DEVELOPMENT_TEAM = 9HB659H6D9;
 				INFOPLIST_FILE = FrameExtraction/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

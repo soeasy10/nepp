@@ -16,8 +16,7 @@ class ViewController: UIViewController, FrameExtractorDelegate {
     let ocv = OpenCVWrapper()
 
     @IBOutlet weak var imageView: UIImageView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         frameExtractor = FrameExtractor()
@@ -31,13 +30,30 @@ class ViewController: UIViewController, FrameExtractorDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    var oneImage = UIImage()
+    var count = 0
+
+    @IBAction func capture(_ sender: Any) {
+        if let image = imageView.image {
+            oneImage = image
+        }
+        dataCenter.imageData.append(oneImage)
+        print(dataCenter.imageData)
+        count += 1
+        if count == 5 {
+            dataCenter.captureSessionState = false
+        }
+    }
+
+    // 여기 안에서 변수 대입 등 복잡한 작업하면 메모리가 터진다.
     func captured(image: UIImage) {
         imageView.image = ocv.makeGray(image)
         
         // Show FPS counter
         fpsCounter.frameCompleted()
-        print(fpsCounter.fps)
+        // print(fpsCounter.fps)
+        
 //        self.timeLabel.text = String(format: "%.1f FPS (latency: %.5f sec)", self.fpsCounter.fps, result.latency)
     }
 

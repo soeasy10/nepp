@@ -14,11 +14,11 @@ protocol FrameExtractorDelegate: class {
 }
 
 class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
-    private let position = AVCaptureDevice.Position.back
+    private let position = AVCaptureDevice.Position.front // 전면, 후면 결정
     private let quality = AVCaptureSession.Preset.iFrame1280x720
     
     private var permissionGranted = false
-    private let captureSession = AVCaptureSession()
+    private let captureSession = AVCaptureSession() // camera frame extraction 시작
     private let sessionQueue = DispatchQueue(label: "session queue")
     private let context = CIContext()
     
@@ -101,6 +101,11 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     // MARK: AVCaptureVideoDataOutputSampleBufferDelegate
     internal func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        if !dataCenter.captureSessionState {
+            sessionQueue.async { [unowned self] in
+                self.captureSession.stopRunning()
+            }
+        }
         guard let uiImage = imageFromSampleBuffer(sampleBuffer: sampleBuffer) else { return }
         DispatchQueue.main.async { [unowned self] in
             self.delegate?.captured(image: uiImage)
