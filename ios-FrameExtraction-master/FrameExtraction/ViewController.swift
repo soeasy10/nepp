@@ -32,17 +32,25 @@ class ViewController: UIViewController, FrameExtractorDelegate {
     }
 
     var oneImage = UIImage()
-    var count = 0
+
+    // Timer
+    var mTimer : Timer?
+    var sec : Int = 0
 
     @IBAction func capture(_ sender: Any) {
         if let image = imageView.image {
             oneImage = image
         }
-        dataCenter.imageData.append(oneImage)
-        print(dataCenter.imageData)
-        count += 1
-        if count == 5 {
-            dataCenter.captureSessionState = false
+        if let timer = mTimer {
+            //timer 객체가 nil 이 아닌경우에는 invalid 상태에만 시작한다
+            if !timer.isValid {
+                /** 1초마다 timerCallback함수를 호출하는 타이머 */
+                mTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
+            }
+        }else{
+            //timer 객체가 nil 인 경우에 객체를 생성하고 타이머를 시작한다
+            /** 1초마다 timerCallback함수를 호출하는 타이머 */
+            mTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
         }
     }
 
@@ -57,6 +65,20 @@ class ViewController: UIViewController, FrameExtractorDelegate {
 //        self.timeLabel.text = String(format: "%.1f FPS (latency: %.5f sec)", self.fpsCounter.fps, result.latency)
     }
 
+    @objc func timerCallback(){
+        if sec == 9 { // 10초 동안 20 프레임을 가져온다.
+            if let timer = mTimer {
+                if(timer.isValid){
+                    timer.invalidate()
+                    dataCenter.captureSessionState = false
+                }
+            }
+        }
 
+        dataCenter.imageData.append(oneImage)
+        print(dataCenter.imageData)
+
+        sec += 1
+    }
 }
 
