@@ -9,6 +9,9 @@
 import UIKit
 
 class OpenClassViewController: UIViewController {
+    
+    @IBOutlet var regClass:UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

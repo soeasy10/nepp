@@ -1,9 +1,9 @@
 //
 //  NavigationViewController.swift
-//  Nepp
+//  Nepp_Students
 //
-//  Created by Tars on 6/27/19.
-//  Copyright © 2019 윤현담. All rights reserved.
+//  Created by 윤현담 on 27/06/2019.
+//  Copyright © 2019 sspog. All rights reserved.
 //
 
 import UIKit
