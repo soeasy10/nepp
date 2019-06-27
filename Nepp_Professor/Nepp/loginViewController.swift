@@ -16,8 +16,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // Firebase에서 ID와 비밀번호 가져오는 작업
     
-    let dbId:String = "20181234"
-    let dbPassword:String = "password"
+    let dbId:String = ""
+    let dbPassword:String = ""
 
     let loginAlert = UIAlertController(title:"웁스!", message:"로그인에 실패했습니다.\r\n아이디와 패스워드를 확인해주세요.", preferredStyle: .alert)
     let loginAlertAction = UIAlertAction(title:"확인", style: .default, handler: nil)

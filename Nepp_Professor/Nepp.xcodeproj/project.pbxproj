@@ -107,11 +107,11 @@
 				6777E4A822C3D08B0015D4AD /* Main.storyboard */,
 				6777E4D222C3D9D10015D4AD /* loginViewController.swift */,
 				67A6FD5A22C4975A009AC9BC /* NavigationViewController.swift */,
+				67A6FD6022C49DE9009AC9BC /* ClassViewController.swift */,
+				67A6FD5E22C49DCE009AC9BC /* AttendanceViewController.swift */,
 				6777E4AB22C3D08C0015D4AD /* Assets.xcassets */,
 				6777E4AD22C3D08C0015D4AD /* LaunchScreen.storyboard */,
 				6777E4B022C3D08C0015D4AD /* Info.plist */,
-				67A6FD5E22C49DCE009AC9BC /* AttendanceViewController.swift */,
-				67A6FD6022C49DE9009AC9BC /* ClassViewController.swift */,
 			);
 			path = Nepp;
 			sourceTree = "<group>";

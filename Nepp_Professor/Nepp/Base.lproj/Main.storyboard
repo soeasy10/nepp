@@ -23,8 +23,8 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="class1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJN-Nd-aii">
                                 <rect key="frame" x="48" y="209" width="275" height="53"/>
-                                <state key="normal" title="Class 1" backgroundImage="buttonEdge">
-                                    <color key="titleColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="기초 C++ 프로그래밍" backgroundImage="buttonEdge">
+                                    <color key="titleColor" red="0.29411764705882354" green="0.34509803921568627" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="Un9-4Z-J7b" kind="show" id="Ik3-4m-Bm4"/>
@@ -32,7 +32,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="class2" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-y9-vbP">
                                 <rect key="frame" x="48" y="270" width="275" height="53"/>
-                                <state key="normal" title="Class 2" backgroundImage="buttonEdge">
+                                <state key="normal" title="JAVA 프로그래밍" backgroundImage="buttonEdge">
                                     <color key="titleColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -41,7 +41,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="class3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-qZ-RW5">
                                 <rect key="frame" x="50" y="331" width="275" height="53"/>
-                                <state key="normal" title="Class 3" backgroundImage="buttonEdge">
+                                <state key="normal" title="윈도우즈 프로그래밍" backgroundImage="buttonEdge">
                                     <color key="titleColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -68,7 +68,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개설과목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJ9-cB-bDl">
                                 <rect key="frame" x="148" y="97" width="78" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -79,25 +79,36 @@
                             <constraint firstItem="bOo-qZ-RW5" firstAttribute="top" secondItem="WzP-y9-vbP" secondAttribute="bottom" constant="8" symbolic="YES" id="6TH-wG-TPt"/>
                             <constraint firstItem="q4J-Yx-xm9" firstAttribute="leading" secondItem="Y4l-SO-OS1" secondAttribute="leading" id="7fe-d2-Cs8"/>
                             <constraint firstItem="Zja-nt-V0Q" firstAttribute="top" secondItem="51t-7S-IDY" secondAttribute="bottom" constant="8" id="9ar-LO-Xqd"/>
+                            <constraint firstItem="nvz-qo-ljZ" firstAttribute="leading" secondItem="Y4l-SO-OS1" secondAttribute="leading" constant="50" id="B46-vx-3X4"/>
+                            <constraint firstItem="Y4l-SO-OS1" firstAttribute="trailing" secondItem="51t-7S-IDY" secondAttribute="trailing" constant="50" id="BAB-x0-ozj"/>
                             <constraint firstItem="51t-7S-IDY" firstAttribute="top" secondItem="nvz-qo-ljZ" secondAttribute="bottom" constant="8" id="D2y-wC-pjk"/>
+                            <constraint firstItem="Y4l-SO-OS1" firstAttribute="trailing" secondItem="JJN-Nd-aii" secondAttribute="trailing" constant="52" id="G4J-Qd-be4"/>
+                            <constraint firstItem="Zja-nt-V0Q" firstAttribute="leading" secondItem="Y4l-SO-OS1" secondAttribute="leading" constant="50" id="JkZ-cW-n4n"/>
+                            <constraint firstItem="Y4l-SO-OS1" firstAttribute="trailing" secondItem="bOo-qZ-RW5" secondAttribute="trailing" constant="50" id="MP6-uf-l3t"/>
                             <constraint firstItem="WzP-y9-vbP" firstAttribute="top" secondItem="JJN-Nd-aii" secondAttribute="bottom" constant="8" symbolic="YES" id="RQO-IJ-YKb"/>
-                            <constraint firstItem="nvz-qo-ljZ" firstAttribute="leading" secondItem="51t-7S-IDY" secondAttribute="leading" id="Rsd-sg-nZ6"/>
+                            <constraint firstItem="Y4l-SO-OS1" firstAttribute="trailing" secondItem="WzP-y9-vbP" secondAttribute="trailing" constant="52" id="Tdw-s2-0sy"/>
                             <constraint firstItem="WzP-y9-vbP" firstAttribute="leading" secondItem="JJN-Nd-aii" secondAttribute="leading" id="V4g-K1-e94"/>
-                            <constraint firstItem="Zja-nt-V0Q" firstAttribute="leading" secondItem="bOo-qZ-RW5" secondAttribute="leading" id="Y1i-zI-Kcs"/>
+                            <constraint firstItem="Y4l-SO-OS1" firstAttribute="trailing" secondItem="nvz-qo-ljZ" secondAttribute="trailing" constant="50" id="Vr9-Ax-xfh"/>
+                            <constraint firstItem="WzP-y9-vbP" firstAttribute="leading" secondItem="Y4l-SO-OS1" secondAttribute="leading" constant="48" id="XaL-dg-rkD"/>
                             <constraint firstItem="Zja-nt-V0Q" firstAttribute="top" secondItem="51t-7S-IDY" secondAttribute="bottom" constant="8" symbolic="YES" id="cMa-PP-fCh"/>
+                            <constraint firstItem="Y4l-SO-OS1" firstAttribute="trailing" secondItem="Zja-nt-V0Q" secondAttribute="trailing" constant="50" id="fK8-hx-R5H"/>
                             <constraint firstItem="nvz-qo-ljZ" firstAttribute="top" secondItem="bOo-qZ-RW5" secondAttribute="bottom" constant="8" id="fkm-w0-GbY"/>
-                            <constraint firstItem="51t-7S-IDY" firstAttribute="leading" secondItem="Y4l-SO-OS1" secondAttribute="leading" constant="48" id="h3e-Iz-QVL"/>
                             <constraint firstAttribute="bottom" secondItem="51t-7S-IDY" secondAttribute="bottom" constant="124" id="jrf-FM-TMy"/>
                             <constraint firstItem="Y4l-SO-OS1" firstAttribute="trailing" secondItem="XJ9-cB-bDl" secondAttribute="trailing" constant="149" id="kn3-Ac-cEO"/>
-                            <constraint firstItem="Zja-nt-V0Q" firstAttribute="leading" secondItem="nvz-qo-ljZ" secondAttribute="leading" id="pIn-yX-bTU"/>
                             <constraint firstItem="51t-7S-IDY" firstAttribute="top" secondItem="nvz-qo-ljZ" secondAttribute="bottom" constant="8" symbolic="YES" id="rm9-o8-GUR"/>
+                            <constraint firstItem="51t-7S-IDY" firstAttribute="leading" secondItem="Y4l-SO-OS1" secondAttribute="leading" constant="50" id="rxl-Pn-n5Z"/>
                             <constraint firstItem="q4J-Yx-xm9" firstAttribute="top" secondItem="DlL-Ry-GC0" secondAttribute="top" id="sye-Pg-g4A"/>
-                            <constraint firstItem="Zja-nt-V0Q" firstAttribute="leading" secondItem="WzP-y9-vbP" secondAttribute="leading" id="tdf-dT-ZZb"/>
+                            <constraint firstItem="bOo-qZ-RW5" firstAttribute="leading" secondItem="Y4l-SO-OS1" secondAttribute="leading" constant="50" id="waq-Sn-x4g"/>
                             <constraint firstItem="XJ9-cB-bDl" firstAttribute="top" secondItem="Y4l-SO-OS1" secondAttribute="top" constant="33" id="zPc-RC-Svn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y4l-SO-OS1"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZnQ-RM-upS"/>
+                    <connections>
+                        <outlet property="class1" destination="JJN-Nd-aii" id="cCg-Oe-mYy"/>
+                        <outlet property="class2" destination="WzP-y9-vbP" id="T3N-ML-vkC"/>
+                        <outlet property="class3" destination="bOo-qZ-RW5" id="kQ9-ks-HDq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJt-wP-KFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +152,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기초 C++ 프로그래밍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWd-PX-Gw3">
                                 <rect key="frame" x="100" y="99" width="175" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
