@@ -63,7 +63,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         print("ERROR: noPW")
                 }
             }
-            if self.pw == dbPW {
+            if self.pw == dbPW { // 아이디와 패스워드가 모두 서버에 존재하며 일치
+                dataCenter.currentID = self.id
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let NavigationViewController = storyBoard.instantiateViewController(withIdentifier: "NVC") as! NavigationViewController
                 self.present(NavigationViewController, animated:true, completion:nil)

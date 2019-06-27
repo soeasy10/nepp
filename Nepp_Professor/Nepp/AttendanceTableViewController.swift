@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class studentCell: UITableViewCell {
 
@@ -21,20 +20,39 @@ class studentCell: UITableViewCell {
     }
 }
 
+protocol TableViewControllerDelegate{
+    
+}
+
 class AttendanceTableViewController: UITableViewController {
 
-    var ref: DatabaseReference!
-    var databaseHandle:DatabaseHandle?
+    var studentIDArr:[String] = []
+    var studentNameArr:[String] = []
+    var attendanceArr:[String] = []
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func setData(
+        studentIDArr:[String],
+        studentNameArr:[String],
+        attendanceArr:[String]
+    ) {
+        // print("setData", studentIDArr)
+        self.studentIDArr = studentIDArr
+        self.studentNameArr = studentNameArr
+        self.attendanceArr = attendanceArr
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.tableView.reloadData()
     }
+
+// viewDidLoad가 있으면 안보임
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Uncomment the following line to preserve selection between presentations
+//        // self.clearsSelectionOnViewWillAppear = false
+//
+//        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+//        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//    }
 
     // MARK: - Table view data source
 
@@ -45,18 +63,21 @@ class AttendanceTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return studentIDArr.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath)
+        guard let studentCell = cell as? studentCell else{
+            return cell
+        }
+        studentCell.studentIdLabel.text = studentIDArr[indexPath.row]
+        studentCell.studentNameLabel.text = studentNameArr[indexPath.row]
+        studentCell.attendanceStateLabel.text = attendanceArr[indexPath.row]
         // Configure the cell...
 
-        return cell
+        return studentCell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

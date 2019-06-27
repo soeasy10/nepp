@@ -8,11 +8,13 @@
 
 import Foundation
 
-let datacenter:DataCenter = DataCenter()
+let dataCenter:DataCenter = DataCenter()
 
 class DataCenter {
     var currentID:String // 현재 로그인한 아이디
+    var classDic:[String:String]
     init() {
         currentID = ""
+        classDic = ["기초 C++ 프로그래밍":"00", "JAVA 프로그래밍":"11", "윈도우즈 프로그래밍":"22"]
     }
 }

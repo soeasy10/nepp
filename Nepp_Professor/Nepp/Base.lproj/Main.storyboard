@@ -126,7 +126,7 @@
                                 <rect key="frame" x="64" y="247" width="249" height="248"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="cya-ne-ttR" kind="embed" id="uOc-PC-fxg"/>
+                                    <segue destination="cya-ne-ttR" kind="embed" identifier="embedChildSegue" id="uOc-PC-fxg"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6주차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNz-Ik-X9c">
@@ -177,16 +177,16 @@
             </objects>
             <point key="canvasLocation" x="2632.8000000000002" y="132.68365817091455"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Attendance Table View Controller-->
         <scene sceneID="JUA-Sq-VfN">
             <objects>
-                <tableViewController id="cya-ne-ttR" sceneMemberID="viewController">
+                <tableViewController id="cya-ne-ttR" customClass="AttendanceTableViewController" customModule="Nepp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vxg-Vc-Fok">
                         <rect key="frame" x="0.0" y="0.0" width="249" height="248"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="atV-KN-4B6" customClass="studentCell" customModule="Nepp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" id="atV-KN-4B6" customClass="studentCell" customModule="Nepp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="249" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atV-KN-4B6" id="EbU-3O-cVu">
