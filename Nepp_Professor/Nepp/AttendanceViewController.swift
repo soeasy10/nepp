@@ -13,6 +13,7 @@ class AttendanceViewController: UIViewController {
 
     @IBOutlet weak var classNameLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var weekLabel: UILabel!
     
     var className: String?
 
@@ -27,7 +28,7 @@ class AttendanceViewController: UIViewController {
             // 버튼을 한 번 더 누르면 뒤로 가기
             // start가 true가 되면서
             _ = navigationController?.popViewController(animated: true)
-
+                dataCenter.week += 1
         }
     }
 
@@ -38,6 +39,12 @@ class AttendanceViewController: UIViewController {
     var attendances:[String] = []
     var classData:[String:[String]] = [:]
     var childVC: AttendanceTableViewController?
+
+    override func viewWillAppear(_ animated: Bool) {
+        if dataCenter.week <= 15 {
+            weekLabel.text = String(dataCenter.week)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

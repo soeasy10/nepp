@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6777E51722C4CF050015D4AD /* AttendenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */; };
-		6777E51922C4D4D60015D4AD /* ClassInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51822C4D4D60015D4AD /* ClassInfoViewController.swift */; };
-		6777E51B22C4DB000015D4AD /* AttendenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51A22C4DB000015D4AD /* AttendenceViewController.swift */; };
-		6777E51D22C4E80F0015D4AD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51C22C4E80F0015D4AD /* NavigationViewController.swift */; };
 		67A6FD4122C4696E009AC9BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD4022C4696E009AC9BC /* AppDelegate.swift */; };
 		67A6FD4322C4696E009AC9BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD4222C4696E009AC9BC /* LoginViewController.swift */; };
 		67A6FD4622C4696E009AC9BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FD4422C4696E009AC9BC /* Main.storyboard */; };
@@ -18,17 +14,16 @@
 		67A6FD4B22C46972009AC9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FD4922C46972009AC9BC /* LaunchScreen.storyboard */; };
 		67A6FD5522C47B79009AC9BC /* dataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD5422C47B79009AC9BC /* dataCenter.swift */; };
 		67A6FD5722C48397009AC9BC /* OpenClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD5622C48397009AC9BC /* OpenClassViewController.swift */; };
-		67A6FD6D22C4E203009AC9BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FD6C22C4E203009AC9BC /* GoogleService-Info.plist */; };
-		67A6FD6F22C4E483009AC9BC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD6E22C4E483009AC9BC /* NavigationViewController.swift */; };
+		67A6FD7522C4EEB6009AC9BC /* navigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD7422C4EEB6009AC9BC /* navigationViewController.swift */; };
+		67A6FD7B22C4F1AE009AC9BC /* StudentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD7A22C4F1AE009AC9BC /* StudentInfoViewController.swift */; };
+		67A6FD7D22C4F1F0009AC9BC /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD7C22C4F1F0009AC9BC /* AttendanceViewController.swift */; };
+		67A6FD7F22C4F20C009AC9BC /* AttendanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD7E22C4F20C009AC9BC /* AttendanceTableViewController.swift */; };
+		67A6FD8122C4FF81009AC9BC /* ClassInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD8022C4FF81009AC9BC /* ClassInfoViewController.swift */; };
 		B1032A5BD393735F9BD88D22 /* Pods_Nepp_Students.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915EE519B1ACA5E9EED58D48 /* Pods_Nepp_Students.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A2BC4D2D39D7EF6CD543691 /* Pods-Nepp_Students.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nepp_Students.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nepp_Students/Pods-Nepp_Students.release.xcconfig"; sourceTree = "<group>"; };
-		6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceTableViewController.swift; sourceTree = "<group>"; };
-		6777E51822C4D4D60015D4AD /* ClassInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfoViewController.swift; sourceTree = "<group>"; };
-		6777E51A22C4DB000015D4AD /* AttendenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceViewController.swift; sourceTree = "<group>"; };
-		6777E51C22C4E80F0015D4AD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		67A6FD3D22C4696E009AC9BC /* Nepp_Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nepp_Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A6FD4022C4696E009AC9BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A6FD4222C4696E009AC9BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +34,11 @@
 		67A6FD5422C47B79009AC9BC /* dataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataCenter.swift; sourceTree = "<group>"; };
 		67A6FD5622C48397009AC9BC /* OpenClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClassViewController.swift; sourceTree = "<group>"; };
 		67A6FD6C22C4E203009AC9BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		67A6FD6E22C4E483009AC9BC /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		67A6FD7422C4EEB6009AC9BC /* navigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationViewController.swift; sourceTree = "<group>"; };
+		67A6FD7A22C4F1AE009AC9BC /* StudentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoViewController.swift; sourceTree = "<group>"; };
+		67A6FD7C22C4F1F0009AC9BC /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		67A6FD7E22C4F20C009AC9BC /* AttendanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewController.swift; sourceTree = "<group>"; };
+		67A6FD8022C4FF81009AC9BC /* ClassInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfoViewController.swift; sourceTree = "<group>"; };
 		915EE519B1ACA5E9EED58D48 /* Pods_Nepp_Students.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nepp_Students.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54ED692DB99779CFA57EA5D /* Pods-Nepp_Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nepp_Students.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nepp_Students/Pods-Nepp_Students.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +79,7 @@
 				67A6FD3E22C4696E009AC9BC /* Products */,
 				26D5862D5E61DC3FB1FA753C /* Pods */,
 				55A9E8524B1DFE1189845ACC /* Frameworks */,
+				67A6FD7122C4EC89009AC9BC /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,18 +97,26 @@
 				67A6FD5422C47B79009AC9BC /* dataCenter.swift */,
 				67A6FD4022C4696E009AC9BC /* AppDelegate.swift */,
 				67A6FD4222C4696E009AC9BC /* LoginViewController.swift */,
-				67A6FD6E22C4E483009AC9BC /* NavigationViewController.swift */,
+				67A6FD7422C4EEB6009AC9BC /* navigationViewController.swift */,
 				67A6FD5622C48397009AC9BC /* OpenClassViewController.swift */,
+				67A6FD8022C4FF81009AC9BC /* ClassInfoViewController.swift */,
+				67A6FD7C22C4F1F0009AC9BC /* AttendanceViewController.swift */,
+				67A6FD7E22C4F20C009AC9BC /* AttendanceTableViewController.swift */,
+				67A6FD7A22C4F1AE009AC9BC /* StudentInfoViewController.swift */,
 				67A6FD4422C4696E009AC9BC /* Main.storyboard */,
-				6777E51A22C4DB000015D4AD /* AttendenceViewController.swift */,
-				6777E51822C4D4D60015D4AD /* ClassInfoViewController.swift */,
 				67A6FD4722C46972009AC9BC /* Assets.xcassets */,
 				67A6FD4922C46972009AC9BC /* LaunchScreen.storyboard */,
 				67A6FD4C22C46972009AC9BC /* Info.plist */,
-				6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */,
-				6777E51C22C4E80F0015D4AD /* NavigationViewController.swift */,
 			);
 			path = Nepp_Students;
+			sourceTree = "<group>";
+		};
+		67A6FD7122C4EC89009AC9BC /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				67A6FD6C22C4E203009AC9BC /* GoogleService-Info.plist */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A6FD4B22C46972009AC9BC /* LaunchScreen.storyboard in Resources */,
-				67A6FD6D22C4E203009AC9BC /* GoogleService-Info.plist in Resources */,
 				67A6FD4822C46972009AC9BC /* Assets.xcassets in Resources */,
 				67A6FD4622C4696E009AC9BC /* Main.storyboard in Resources */,
 			);
@@ -228,14 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6777E51D22C4E80F0015D4AD /* NavigationViewController.swift in Sources */,
-				6777E51B22C4DB000015D4AD /* AttendenceViewController.swift in Sources */,
+				67A6FD7522C4EEB6009AC9BC /* navigationViewController.swift in Sources */,
 				67A6FD4322C4696E009AC9BC /* LoginViewController.swift in Sources */,
+				67A6FD8122C4FF81009AC9BC /* ClassInfoViewController.swift in Sources */,
 				67A6FD4122C4696E009AC9BC /* AppDelegate.swift in Sources */,
+				67A6FD7F22C4F20C009AC9BC /* AttendanceTableViewController.swift in Sources */,
 				67A6FD5522C47B79009AC9BC /* dataCenter.swift in Sources */,
-				6777E51722C4CF050015D4AD /* AttendenceTableViewController.swift in Sources */,
 				67A6FD5722C48397009AC9BC /* OpenClassViewController.swift in Sources */,
-				6777E51922C4D4D60015D4AD /* ClassInfoViewController.swift in Sources */,
+				67A6FD7B22C4F1AE009AC9BC /* StudentInfoViewController.swift in Sources */,
+				67A6FD7D22C4F1F0009AC9BC /* AttendanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

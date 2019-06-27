@@ -1,14 +1,14 @@
 //
-//  NavigationViewController.swift
+//  navigationViewController.swift
 //  Nepp_Students
 //
-//  Created by 윤현담 on 27/06/2019.
+//  Created by Tars on 6/27/19.
 //  Copyright © 2019 sspog. All rights reserved.
 //
 
 import UIKit
 
-class NavigationViewController: UINavigationController {
+class navigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
