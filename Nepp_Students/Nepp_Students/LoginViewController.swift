@@ -26,8 +26,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         if idField.text == dbId && passwordField.text == dbPassword {
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let openClassViewController = storyBoard.instantiateViewController(withIdentifier: "openClassView") as! OpenClassViewController
-            self.present(openClassViewController, animated:true, completion:nil)
+            let NavigationViewController = storyBoard.instantiateViewController(withIdentifier: "NVC") as! NavigationViewController
+            self.present(NavigationViewController, animated:true, completion:nil)
         } else {
             present(loginAlert, animated: true, completion: nil)
         }

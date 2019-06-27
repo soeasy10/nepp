@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6777E51722C4CF050015D4AD /* AttendenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */; };
+		6777E51922C4D4D60015D4AD /* ClassInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51822C4D4D60015D4AD /* ClassInfoViewController.swift */; };
+		6777E51B22C4DB000015D4AD /* AttendenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51A22C4DB000015D4AD /* AttendenceViewController.swift */; };
+		6777E51D22C4E80F0015D4AD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E51C22C4E80F0015D4AD /* NavigationViewController.swift */; };
 		67A6FD4122C4696E009AC9BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD4022C4696E009AC9BC /* AppDelegate.swift */; };
 		67A6FD4322C4696E009AC9BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD4222C4696E009AC9BC /* LoginViewController.swift */; };
 		67A6FD4622C4696E009AC9BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FD4422C4696E009AC9BC /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceTableViewController.swift; sourceTree = "<group>"; };
+		6777E51822C4D4D60015D4AD /* ClassInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfoViewController.swift; sourceTree = "<group>"; };
+		6777E51A22C4DB000015D4AD /* AttendenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceViewController.swift; sourceTree = "<group>"; };
+		6777E51C22C4E80F0015D4AD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		67A6FD3D22C4696E009AC9BC /* Nepp_Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nepp_Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A6FD4022C4696E009AC9BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A6FD4222C4696E009AC9BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -65,10 +71,13 @@
 				67A6FD4222C4696E009AC9BC /* LoginViewController.swift */,
 				67A6FD5622C48397009AC9BC /* OpenClassViewController.swift */,
 				67A6FD4422C4696E009AC9BC /* Main.storyboard */,
+				6777E51A22C4DB000015D4AD /* AttendenceViewController.swift */,
+				6777E51822C4D4D60015D4AD /* ClassInfoViewController.swift */,
 				67A6FD4722C46972009AC9BC /* Assets.xcassets */,
 				67A6FD4922C46972009AC9BC /* LaunchScreen.storyboard */,
 				67A6FD4C22C46972009AC9BC /* Info.plist */,
 				6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */,
+				6777E51C22C4E80F0015D4AD /* NavigationViewController.swift */,
 			);
 			path = Nepp_Students;
 			sourceTree = "<group>";
@@ -144,11 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6777E51D22C4E80F0015D4AD /* NavigationViewController.swift in Sources */,
+				6777E51B22C4DB000015D4AD /* AttendenceViewController.swift in Sources */,
 				67A6FD4322C4696E009AC9BC /* LoginViewController.swift in Sources */,
 				67A6FD4122C4696E009AC9BC /* AppDelegate.swift in Sources */,
 				67A6FD5522C47B79009AC9BC /* dataCenter.swift in Sources */,
 				6777E51722C4CF050015D4AD /* AttendenceTableViewController.swift in Sources */,
 				67A6FD5722C48397009AC9BC /* OpenClassViewController.swift in Sources */,
+				6777E51922C4D4D60015D4AD /* ClassInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

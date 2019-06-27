@@ -1,17 +1,14 @@
 //
-//  OpenClassViewController.swift
+//  NavigationViewController.swift
 //  Nepp_Students
 //
-//  Created by Tars on 6/27/19.
+//  Created by 윤현담 on 27/06/2019.
 //  Copyright © 2019 sspog. All rights reserved.
 //
 
 import UIKit
 
-class OpenClassViewController: UIViewController {
-    
-    @IBOutlet var regClass:UIButton!
-    
+class NavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
