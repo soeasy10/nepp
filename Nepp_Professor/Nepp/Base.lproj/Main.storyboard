@@ -21,13 +21,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbox" translatesAutoresizingMaskIntoConstraints="NO" id="q4J-Yx-xm9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                             </imageView>
-<<<<<<< HEAD
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FBc-CU-gla">
                                 <rect key="frame" x="48" y="190" width="275" height="358"/>
-=======
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jdq-7C-edz">
-                                <rect key="frame" x="48" y="209" width="275" height="358"/>
->>>>>>> 5d0093a48ce6850e4ba900b4f4181886cd866f7b
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="class1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJN-Nd-aii">
@@ -265,14 +260,6 @@
                                 <rect key="frame" x="151" y="135" width="72" height="122.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ql-eQ-D2r">
-                                <rect key="frame" x="49" y="500" width="332" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="buttonLogin"/>
-                                <connections>
-                                    <action selector="loginAction:" destination="wf7-6o-VZ7" eventType="touchUpInside" id="htB-OR-Cpf"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="idImage" image="buttonGray" translatesAutoresizingMaskIntoConstraints="NO" id="HtC-iw-k8d">
                                 <rect key="frame" x="49" y="320" width="275" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -295,19 +282,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-il-qyQ">
-                                <rect key="frame" x="284" y="320" width="61" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="tintColor" red="0.96620899439999997" green="0.65041819050000005" blue="0.70142681309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Auto Login">
-                                    <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="selected">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ql-eQ-D2r">
-                                <rect key="frame" x="51" y="529" width="332" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ql-eQ-D2r">
+                                <rect key="frame" x="51" y="529" width="294" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="buttonLogin"/>
                                 <connections>
                                     <action selector="loginAction:" destination="wf7-6o-VZ7" eventType="touchUpInside" id="htB-OR-Cpf"/>

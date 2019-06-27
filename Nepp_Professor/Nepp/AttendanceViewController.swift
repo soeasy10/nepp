@@ -92,8 +92,6 @@ class AttendanceViewController: UIViewController {
 
             self.childVC?.setData(studentIDArr: self.studentIDs, studentNameArr: self.studentNames, attendanceArr: self.attendances)
         }
-
-        week = ++now;
     }
 
     func setNavigationBar(){

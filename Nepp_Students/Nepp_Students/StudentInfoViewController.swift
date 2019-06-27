@@ -11,14 +11,26 @@ import UIKit
 class StudentInfoViewController: UIViewController {
 
     //@IBOutlet var btnCircle:UIButton!
-
+    @IBOutlet weak var majorLabel: UILabel!
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        profileImageView.contentMode = .scaleAspectFill
+        profileImageView.image = dataCenter.imageData[0]
+        majorLabel.text = dataCenter.major
+        idLabel.text = dataCenter.id
+        nameLabel.text = dataCenter.name
+        
         // Do any additional setup after loading the view.
     }
-    
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     /*
     // MARK: - Navigation

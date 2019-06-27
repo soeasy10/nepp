@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 var dataCenter:DataCenter = DataCenter()
 
@@ -23,4 +24,7 @@ class DataCenter {
     }
     var id:String = ""
     var password:String = ""
+
+    var imageData:[UIImage] = []
+    var captureSessionState:Bool = true
 }
