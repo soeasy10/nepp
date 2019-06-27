@@ -98,6 +98,7 @@ class ViewController: UIViewController, FrameExtractorDelegate {
                     dataCenter.captureSessionState = false
                     // 다음 뷰로 이동하는 작업
 
+                    print(dataCenter.imageData.count)
                     // Firebase Storage에 업로드하는 작업
                     for i in 0...9 {
                         uiImageToPNG(dataCenter.imageData[i], "Changsung", String(i))
@@ -106,6 +107,7 @@ class ViewController: UIViewController, FrameExtractorDelegate {
             }
         }
 
+        // 각 frame을 oneImage에 저장 후, imageData [UIImage]에 추가한다.
         if let image = imageView.image {
             oneImage = image
         }
