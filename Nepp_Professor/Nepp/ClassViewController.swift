@@ -37,13 +37,32 @@ class ClassViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
-
     func setNavigationBar(){
         let bar:UINavigationBar! =  self.navigationController?.navigationBar
         bar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         bar.shadowImage = UIImage()
         bar.backgroundColor = UIColor.clear
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "class1Segue" {
+            let attendanceViewController = segue.destination as? AttendanceViewController
+            if let avc = attendanceViewController {
+                avc.className = class1.titleLabel!.text
+            }
+        }
+        if segue.identifier == "class2Segue" {
+            let attendanceViewController = segue.destination as? AttendanceViewController
+            if let avc = attendanceViewController {
+                avc.className = class2.titleLabel!.text
+            }
+        }
+        if segue.identifier == "class3Segue" {
+            let attendanceViewController = segue.destination as? AttendanceViewController
+            if let avc = attendanceViewController {
+                avc.className = class3.titleLabel!.text
+            }
+        }
     }
 
     /*

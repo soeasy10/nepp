@@ -10,10 +10,15 @@ import UIKit
 
 class AttendanceViewController: UIViewController {
 
+    @IBOutlet weak var classNameLabel: UILabel!
+
+    var className: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavigationBar()
 
+        classNameLabel.text = className!
         // Do any additional setup after loading the view.
     }
 

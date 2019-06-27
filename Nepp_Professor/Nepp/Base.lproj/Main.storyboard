@@ -27,7 +27,7 @@
                                     <color key="titleColor" red="0.29411764705882354" green="0.34509803921568627" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Un9-4Z-J7b" kind="show" id="Ik3-4m-Bm4"/>
+                                    <segue destination="Un9-4Z-J7b" kind="show" identifier="class1Segue" id="Ik3-4m-Bm4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="class2" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-y9-vbP">
@@ -36,7 +36,7 @@
                                     <color key="titleColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Un9-4Z-J7b" kind="show" id="PEB-5I-9PV"/>
+                                    <segue destination="Un9-4Z-J7b" kind="show" identifier="class2Segue" id="PEB-5I-9PV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="class3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-qZ-RW5">
@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Un9-4Z-J7b" kind="show" id="cc9-as-qgD"/>
+                                    <segue destination="Un9-4Z-J7b" kind="show" identifier="class3Segue" id="cc9-as-qgD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="empty1" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvz-qo-ljZ">
@@ -165,6 +165,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EXa-2K-tM6"/>
                     </view>
+                    <connections>
+                        <outlet property="classNameLabel" destination="XWd-PX-Gw3" id="tOp-1d-axz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXx-30-Wdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,7 +349,7 @@
         <image name="topbox" width="375" height="140"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PEB-5I-9PV"/>
+        <segue reference="Ik3-4m-Bm4"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
