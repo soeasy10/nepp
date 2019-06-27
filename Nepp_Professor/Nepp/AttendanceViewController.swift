@@ -11,14 +11,34 @@ import UIKit
 class AttendanceViewController: UIViewController {
 
     @IBOutlet weak var classNameLabel: UILabel!
-
+    @IBOutlet weak var startButton: UIButton!
+    
     var className: String?
+
+    var start:Bool = false
+
+    @IBAction func classAction(_ sender: Any) {
+        if !start {
+            startButton.setImage(UIImage(named: "buttonEndclass"), for: .normal)
+            startButton.setImage(UIImage(named: "buttonEndclassHover"), for: .highlighted)
+            start = true
+        } else {
+            // 버튼을 한 번 더 누르면 뒤로 가기
+            // start가 true가 되면서
+            _ = navigationController?.popViewController(animated: true)
+
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavigationBar()
 
         classNameLabel.text = className!
+
+        startButton.setImage(UIImage(named: "buttonStartclass"), for: .normal)
+        startButton.setImage(UIImage(named: "buttonStartclassHover"), for: .highlighted)
+
         // Do any additional setup after loading the view.
     }
 

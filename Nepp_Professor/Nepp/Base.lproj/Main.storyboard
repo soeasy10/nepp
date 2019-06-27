@@ -140,6 +140,9 @@
                                 <rect key="frame" x="49" y="550" width="278" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="buttonStartclass"/>
+                                <connections>
+                                    <action selector="classAction:" destination="Un9-4Z-J7b" eventType="touchUpInside" id="i5Z-bF-7l4"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tablebox" translatesAutoresizingMaskIntoConstraints="NO" id="9IN-Zu-rSr">
                                 <rect key="frame" x="49" y="235" width="278" height="275"/>
@@ -167,6 +170,7 @@
                     </view>
                     <connections>
                         <outlet property="classNameLabel" destination="XWd-PX-Gw3" id="tOp-1d-axz"/>
+                        <outlet property="startButton" destination="F48-iG-b1U" id="Fnv-zX-NVM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXx-30-Wdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="atV-KN-4B6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="atV-KN-4B6" customClass="studentCell" customModule="Nepp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="249" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atV-KN-4B6" id="EbU-3O-cVu">
@@ -203,16 +207,20 @@
                                             <color key="textColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="미출결" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KKt-7R-ZCS">
-                                            <rect key="frame" x="189" y="13" width="44" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="미출결" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTK-a8-Vnd">
+                                            <rect key="frame" x="196" y="13" width="37" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.94510442018508911" green="0.94508665800094604" blue="0.94509869813919067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="attendanceStateLabel" destination="dTK-a8-Vnd" id="xqb-pV-qmy"/>
+                                    <outlet property="studentIdLabel" destination="6eh-Rv-wMT" id="qOH-42-n9f"/>
+                                    <outlet property="studentNameLabel" destination="DFr-f5-N8m" id="ihg-RP-hkF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
