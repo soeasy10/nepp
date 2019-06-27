@@ -54,7 +54,8 @@ class ViewController: UIViewController, FrameExtractorDelegate {
 
     // 여기 안에서 변수 대입 등 복잡한 작업하면 메모리가 터진다.
     func captured(image: UIImage) {
-        imageView.image = ocv.makeGray(image)
+        imageView.image = image
+        // imageView.image = ocv.makeGray(image) // 흑백으로 변환하여 반환
         
         // Show FPS counter
         fpsCounter.frameCompleted()
@@ -90,7 +91,7 @@ class ViewController: UIViewController, FrameExtractorDelegate {
     }
 
     @objc func timerCallback(){
-        if sec > 9 { // 10초 동안 20 프레임을 가져온다.
+        if sec == 10 { // 10초 동안 10 프레임을 가져온다. (사실상 11프레임을 가져온 상태에서 10프레임만 올림)
             if let timer = mTimer {
                 if(timer.isValid){
                     timer.invalidate()
