@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, FrameExtractorDelegate {
     
@@ -38,9 +39,6 @@ class ViewController: UIViewController, FrameExtractorDelegate {
     var sec : Int = 0
 
     @IBAction func capture(_ sender: Any) {
-        if let image = imageView.image {
-            oneImage = image
-        }
         if let timer = mTimer {
             //timer 객체가 nil 이 아닌경우에는 invalid 상태에만 시작한다
             if !timer.isValid {
@@ -65,16 +63,51 @@ class ViewController: UIViewController, FrameExtractorDelegate {
 //        self.timeLabel.text = String(format: "%.1f FPS (latency: %.5f sec)", self.fpsCounter.fps, result.latency)
     }
 
+    var storageRef:StorageReference?
+
+    func uiImageToPNG(_ image:UIImage, _ user:String, _ index:String) { // 나중에 인자로 유저 아이디 받기
+        guard let png = UIImagePNGRepresentation(image) else { // NSData
+            return
+        }
+
+        storageRef = Storage.storage().reference()
+
+        let uploadTask = storageRef!.child(user + "/userImage" + index + ".png").putData(png, metadata: nil) { (metadata, error) in
+            guard let metadata = metadata else {
+                // Uh-oh, an error occurred!
+                return
+            }
+            // Metadata contains file metadata such as size, content-type.
+            let size = metadata.size
+            // You can also access to download URL after upload.
+            self.storageRef!.child(user + "/userImage" + index + ".png").downloadURL { (url, error) in
+                guard let downloadURL = url else {
+                    // Uh-oh, an error occurred!
+                    return
+                }
+            }
+        }
+    }
+
     @objc func timerCallback(){
-        if sec == 9 { // 10초 동안 20 프레임을 가져온다.
+        if sec > 9 { // 10초 동안 20 프레임을 가져온다.
             if let timer = mTimer {
                 if(timer.isValid){
                     timer.invalidate()
                     dataCenter.captureSessionState = false
+                    // 다음 뷰로 이동하는 작업
+
+                    // Firebase Storage에 업로드하는 작업
+                    for i in 0...9 {
+                        uiImageToPNG(dataCenter.imageData[i], "Changsung", String(i))
+                    }
                 }
             }
         }
 
+        if let image = imageView.image {
+            oneImage = image
+        }
         dataCenter.imageData.append(oneImage)
         print(dataCenter.imageData)
 

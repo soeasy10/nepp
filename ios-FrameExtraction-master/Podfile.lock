@@ -64,6 +64,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Analytics
+  - Firebase/Core
   - Firebase/Storage
   - OpenCV (~> 3.3.1)
 
@@ -94,6 +95,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   OpenCV: d81447860f038d60723084aa02ecc963f95c55fa
 
-PODFILE CHECKSUM: d47e6c6969f539c45db1367e6a3513f176e654e2
+PODFILE CHECKSUM: c3f9342a393d036c2471540ae9e15bf85eb70fc0
 
 COCOAPODS: 1.5.3
