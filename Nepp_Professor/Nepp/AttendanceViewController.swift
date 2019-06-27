@@ -14,8 +14,9 @@ class AttendanceViewController: UIViewController {
     @IBOutlet weak var classNameLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var weekLabel: UILabel!
-    
+
     var className: String?
+    var now:Int = 0
 
     var start:Bool = false
 
@@ -91,6 +92,8 @@ class AttendanceViewController: UIViewController {
 
             self.childVC?.setData(studentIDArr: self.studentIDs, studentNameArr: self.studentNames, attendanceArr: self.attendances)
         }
+
+        week = ++now;
     }
 
     func setNavigationBar(){
