@@ -8,17 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6777E4A522C3D08B0015D4AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4A422C3D08B0015D4AD /* AppDelegate.swift */; };
-		6777E4A722C3D08B0015D4AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4A622C3D08B0015D4AD /* ViewController.swift */; };
 		6777E4AA22C3D08B0015D4AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6777E4A822C3D08B0015D4AD /* Main.storyboard */; };
 		6777E4AC22C3D08C0015D4AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6777E4AB22C3D08C0015D4AD /* Assets.xcassets */; };
 		6777E4AF22C3D08C0015D4AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6777E4AD22C3D08C0015D4AD /* LaunchScreen.storyboard */; };
 		6777E4BA22C3D08D0015D4AD /* NeppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4B922C3D08D0015D4AD /* NeppTests.swift */; };
 		6777E4C522C3D08D0015D4AD /* NeppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4C422C3D08D0015D4AD /* NeppUITests.swift */; };
 		6777E4D322C3D9D10015D4AD /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4D222C3D9D10015D4AD /* loginViewController.swift */; };
-		6777E4D522C3EBC30015D4AD /* classViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4D422C3EBC30015D4AD /* classViewController.swift */; };
-		6777E4D722C3F6B60015D4AD /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4D622C3F6B60015D4AD /* Info.swift */; };
-		6777E4D922C3F8550015D4AD /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4D822C3F8550015D4AD /* ClassTableViewCell.swift */; };
-		6777E4DB22C3FECD0015D4AD /* attendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6777E4DA22C3FECD0015D4AD /* attendViewController.swift */; };
+		67A6FD5B22C4975B009AC9BC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD5A22C4975A009AC9BC /* NavigationViewController.swift */; };
+		67A6FD5F22C49DCE009AC9BC /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD5E22C49DCE009AC9BC /* AttendanceViewController.swift */; };
+		67A6FD6122C49DE9009AC9BC /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD6022C49DE9009AC9BC /* ClassViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6777E4A122C3D08B0015D4AD /* Nepp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nepp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6777E4A422C3D08B0015D4AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6777E4A622C3D08B0015D4AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6777E4A922C3D08B0015D4AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6777E4AB22C3D08C0015D4AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6777E4AE22C3D08C0015D4AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,10 +50,9 @@
 		6777E4C422C3D08D0015D4AD /* NeppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeppUITests.swift; sourceTree = "<group>"; };
 		6777E4C622C3D08D0015D4AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6777E4D222C3D9D10015D4AD /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		6777E4D422C3EBC30015D4AD /* classViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classViewController.swift; sourceTree = "<group>"; };
-		6777E4D622C3F6B60015D4AD /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
-		6777E4D822C3F8550015D4AD /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
-		6777E4DA22C3FECD0015D4AD /* attendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attendViewController.swift; sourceTree = "<group>"; };
+		67A6FD5A22C4975A009AC9BC /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		67A6FD5E22C49DCE009AC9BC /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		67A6FD6022C49DE9009AC9BC /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				6777E4A422C3D08B0015D4AD /* AppDelegate.swift */,
-				6777E4A622C3D08B0015D4AD /* ViewController.swift */,
-				6777E4DA22C3FECD0015D4AD /* attendViewController.swift */,
 				6777E4A822C3D08B0015D4AD /* Main.storyboard */,
-				6777E4D822C3F8550015D4AD /* ClassTableViewCell.swift */,
-				6777E4D422C3EBC30015D4AD /* classViewController.swift */,
-				6777E4D622C3F6B60015D4AD /* Info.swift */,
+				6777E4D222C3D9D10015D4AD /* loginViewController.swift */,
+				67A6FD5A22C4975A009AC9BC /* NavigationViewController.swift */,
 				6777E4AB22C3D08C0015D4AD /* Assets.xcassets */,
 				6777E4AD22C3D08C0015D4AD /* LaunchScreen.storyboard */,
 				6777E4B022C3D08C0015D4AD /* Info.plist */,
-				6777E4D222C3D9D10015D4AD /* loginViewController.swift */,
+				67A6FD5E22C49DCE009AC9BC /* AttendanceViewController.swift */,
+				67A6FD6022C49DE9009AC9BC /* ClassViewController.swift */,
 			);
 			path = Nepp;
 			sourceTree = "<group>";
@@ -271,12 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6777E4DB22C3FECD0015D4AD /* attendViewController.swift in Sources */,
-				6777E4A722C3D08B0015D4AD /* ViewController.swift in Sources */,
-				6777E4D522C3EBC30015D4AD /* classViewController.swift in Sources */,
-				6777E4D922C3F8550015D4AD /* ClassTableViewCell.swift in Sources */,
+				67A6FD5B22C4975B009AC9BC /* NavigationViewController.swift in Sources */,
+				67A6FD6122C49DE9009AC9BC /* ClassViewController.swift in Sources */,
+				67A6FD5F22C49DCE009AC9BC /* AttendanceViewController.swift in Sources */,
 				6777E4A522C3D08B0015D4AD /* AppDelegate.swift in Sources */,
-				6777E4D722C3F6B60015D4AD /* Info.swift in Sources */,
 				6777E4D322C3D9D10015D4AD /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
