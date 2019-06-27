@@ -15,9 +15,13 @@
 		67A6FD4B22C46972009AC9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FD4922C46972009AC9BC /* LaunchScreen.storyboard */; };
 		67A6FD5522C47B79009AC9BC /* dataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD5422C47B79009AC9BC /* dataCenter.swift */; };
 		67A6FD5722C48397009AC9BC /* OpenClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD5622C48397009AC9BC /* OpenClassViewController.swift */; };
+		67A6FD6D22C4E203009AC9BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FD6C22C4E203009AC9BC /* GoogleService-Info.plist */; };
+		67A6FD6F22C4E483009AC9BC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD6E22C4E483009AC9BC /* NavigationViewController.swift */; };
+		B1032A5BD393735F9BD88D22 /* Pods_Nepp_Students.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915EE519B1ACA5E9EED58D48 /* Pods_Nepp_Students.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2BC4D2D39D7EF6CD543691 /* Pods-Nepp_Students.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nepp_Students.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nepp_Students/Pods-Nepp_Students.release.xcconfig"; sourceTree = "<group>"; };
 		6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceTableViewController.swift; sourceTree = "<group>"; };
 		67A6FD3D22C4696E009AC9BC /* Nepp_Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nepp_Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A6FD4022C4696E009AC9BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,10 @@
 		67A6FD4C22C46972009AC9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67A6FD5422C47B79009AC9BC /* dataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataCenter.swift; sourceTree = "<group>"; };
 		67A6FD5622C48397009AC9BC /* OpenClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClassViewController.swift; sourceTree = "<group>"; };
+		67A6FD6C22C4E203009AC9BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67A6FD6E22C4E483009AC9BC /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		915EE519B1ACA5E9EED58D48 /* Pods_Nepp_Students.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nepp_Students.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54ED692DB99779CFA57EA5D /* Pods-Nepp_Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nepp_Students.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nepp_Students/Pods-Nepp_Students.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1032A5BD393735F9BD88D22 /* Pods_Nepp_Students.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26D5862D5E61DC3FB1FA753C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C54ED692DB99779CFA57EA5D /* Pods-Nepp_Students.debug.xcconfig */,
+				1A2BC4D2D39D7EF6CD543691 /* Pods-Nepp_Students.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		55A9E8524B1DFE1189845ACC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				915EE519B1ACA5E9EED58D48 /* Pods_Nepp_Students.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67A6FD3422C4696E009AC9BC = {
 			isa = PBXGroup;
 			children = (
 				67A6FD3F22C4696E009AC9BC /* Nepp_Students */,
 				67A6FD3E22C4696E009AC9BC /* Products */,
+				26D5862D5E61DC3FB1FA753C /* Pods */,
+				55A9E8524B1DFE1189845ACC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,12 +91,14 @@
 				67A6FD5422C47B79009AC9BC /* dataCenter.swift */,
 				67A6FD4022C4696E009AC9BC /* AppDelegate.swift */,
 				67A6FD4222C4696E009AC9BC /* LoginViewController.swift */,
+				67A6FD6E22C4E483009AC9BC /* NavigationViewController.swift */,
 				67A6FD5622C48397009AC9BC /* OpenClassViewController.swift */,
 				67A6FD4422C4696E009AC9BC /* Main.storyboard */,
 				67A6FD4722C46972009AC9BC /* Assets.xcassets */,
 				67A6FD4922C46972009AC9BC /* LaunchScreen.storyboard */,
 				67A6FD4C22C46972009AC9BC /* Info.plist */,
 				6777E51622C4CF050015D4AD /* AttendenceTableViewController.swift */,
+				67A6FD6C22C4E203009AC9BC /* GoogleService-Info.plist */,
 			);
 			path = Nepp_Students;
 			sourceTree = "<group>";
@@ -80,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67A6FD4F22C46972009AC9BC /* Build configuration list for PBXNativeTarget "Nepp_Students" */;
 			buildPhases = (
+				4CAEC25C029C237BEAD20A8F /* [CP] Check Pods Manifest.lock */,
 				67A6FD3922C4696E009AC9BC /* Sources */,
 				67A6FD3A22C4696E009AC9BC /* Frameworks */,
 				67A6FD3B22C4696E009AC9BC /* Resources */,
+				21E8D17EDA94690F00ECC37A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A6FD4B22C46972009AC9BC /* LaunchScreen.storyboard in Resources */,
+				67A6FD6D22C4E203009AC9BC /* GoogleService-Info.plist in Resources */,
 				67A6FD4822C46972009AC9BC /* Assets.xcassets in Resources */,
 				67A6FD4622C4696E009AC9BC /* Main.storyboard in Resources */,
 			);
@@ -139,11 +172,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21E8D17EDA94690F00ECC37A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nepp_Students/Pods-Nepp_Students-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nepp_Students/Pods-Nepp_Students-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CAEC25C029C237BEAD20A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nepp_Students-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67A6FD3922C4696E009AC9BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A6FD6F22C4E483009AC9BC /* NavigationViewController.swift in Sources */,
 				67A6FD4322C4696E009AC9BC /* LoginViewController.swift in Sources */,
 				67A6FD4122C4696E009AC9BC /* AppDelegate.swift in Sources */,
 				67A6FD5522C47B79009AC9BC /* dataCenter.swift in Sources */,
@@ -292,6 +369,7 @@
 		};
 		67A6FD5022C46972009AC9BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C54ED692DB99779CFA57EA5D /* Pods-Nepp_Students.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +388,7 @@
 		};
 		67A6FD5122C46972009AC9BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2BC4D2D39D7EF6CD543691 /* Pods-Nepp_Students.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
