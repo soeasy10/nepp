@@ -25,6 +25,15 @@ class AttendanceViewController: UIViewController {
             startButton.setImage(UIImage(named: "buttonEndclass"), for: .normal)
             startButton.setImage(UIImage(named: "buttonEndclassHover"), for: .highlighted)
             start = true
+//            guard let url = URL(string: "http://157b74b3.ngrok.io/encode/") else {
+//                return //be safe
+//            }
+//
+//            if #available(iOS 10.0, *) {
+//                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//            } else {
+//                UIApplication.shared.openURL(url)
+//            }
         } else {
             // 버튼을 한 번 더 누르면 뒤로 가기
             // start가 true가 되면서

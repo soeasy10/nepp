@@ -197,7 +197,7 @@
                                                     <color key="textColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="임창성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFr-f5-N8m">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="임창성" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFr-f5-N8m">
                                                     <rect key="frame" x="106.5" y="0.0" width="36.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.29225039479999998" green="0.34559094909999999" blue="0.61963731050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -272,10 +272,10 @@
                                 <rect key="frame" x="80" y="340" width="204" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.2784313725" green="0.34901960780000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="pw" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuv-O5-jbG">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="pw" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuv-O5-jbG" userLabel="PW Field">
                                 <rect key="frame" x="80" y="400" width="204" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.2784313725" green="0.34901960780000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -299,7 +299,7 @@
                     <connections>
                         <outlet property="idField" destination="xJG-sM-Ikm" id="822-2U-3X2"/>
                         <outlet property="loginButton" destination="7ql-eQ-D2r" id="Bcc-BE-gaU"/>
-                        <outlet property="passwordField" destination="kuv-O5-jbG" id="xfT-5r-NP8"/>
+                        <outlet property="passwordField" destination="kuv-O5-jbG" id="eg9-D2-wgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oV6-Wd-GPT" sceneMemberID="firstResponder"/>
