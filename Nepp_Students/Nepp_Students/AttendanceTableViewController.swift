@@ -1,54 +1,44 @@
 //
 //  AttendanceTableViewController.swift
-//  Nepp
+//  Nepp_Students
 //
 //  Created by Tars on 6/27/19.
-//  Copyright © 2019 윤현담. All rights reserved.
+//  Copyright © 2019 sspog. All rights reserved.
 //
 
 import UIKit
 
 class studentCell: UITableViewCell {
 
-    @IBOutlet weak var studentIdLabel: UILabel!
-    @IBOutlet weak var studentNameLabel: UILabel!
-    @IBOutlet weak var attendanceStateLabel: UILabel!
-    
+    @IBOutlet weak var weekLabel: UILabel!
+    @IBOutlet weak var bar1: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var bar2: UILabel!
+    @IBOutlet weak var attendanceLabel: UITextField!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 }
 
+
 class AttendanceTableViewController: UITableViewController {
 
-    var studentIDArr:[String] = []
-    var studentNameArr:[String] = []
+    var weekArr:[String] = []
+    var datesArr:[String] = ["2019년 3월 4일", "2019년 3월 11일", "2019년 3월 18일", "2019년 3월 25일", "2019년 4월 1일", "2019년 4월 8일", "2019년 4월 15일", "2019년 4월 22일", "2019년 4월 29일", "2019년 5월 13일", "2019년 5월 20일", "2019년 5월 27일", "2019년 6월 3일", "2019년 6월 10일", "2019년 6월 17일"]
     var attendanceArr:[String] = []
 
     func setData(
-        studentIDArr:[String],
-        studentNameArr:[String],
-        attendanceArr:[String]
+        weeks:[String],
+        attendances:[String]
     ) {
-        // print("setData", studentIDArr)
-        self.studentIDArr = studentIDArr
-        self.studentNameArr = studentNameArr
-        self.attendanceArr = attendanceArr
+        self.weekArr = weeks
+        // self.datesArr = dates
+        self.attendanceArr = attendances
 
         self.tableView.reloadData()
     }
-
-// viewDidLoad가 있으면 안보임
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Uncomment the following line to preserve selection between presentations
-//        // self.clearsSelectionOnViewWillAppear = false
-//
-//        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-//    }
 
     // MARK: - Table view data source
 
@@ -59,7 +49,7 @@ class AttendanceTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return studentIDArr.count
+        return weekArr.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,10 +57,27 @@ class AttendanceTableViewController: UITableViewController {
         guard let studentCell = cell as? studentCell else{
             return cell
         }
-        studentCell.studentIdLabel.text = studentIDArr[indexPath.row]
-        studentCell.studentNameLabel.text = studentNameArr[indexPath.row]
-        studentCell.attendanceStateLabel.text = attendanceArr[indexPath.row]
-        // Configure the cell...
+        studentCell.weekLabel.text = weekArr[indexPath.row]
+        studentCell.bar1.text = "|"
+        studentCell.dateLabel.text = datesArr[indexPath.row]
+        studentCell.bar2.text = "|"
+
+        var newAttendence:String = "미출결"
+        switch attendanceArr[indexPath.row] {
+        case "0":
+            newAttendence = "미출결"
+        case "1":
+            newAttendence = "출석"
+        case "2":
+            newAttendence = "결석"
+        case "3":
+            newAttendence = "지각"
+        case "4":
+            newAttendence = "조퇴"
+        default:
+            print("ERROR")
+        }
+        studentCell.attendanceLabel.text = newAttendence
 
         return studentCell
     }

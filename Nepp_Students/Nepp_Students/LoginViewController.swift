@@ -23,11 +23,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     let loginAlertAction = UIAlertAction(title:"확인", style: .default, handler: nil)
 
     @IBAction func loginAction(_ sender: Any) {
-        
         if true {
+            dataCenter.currentID = "20181234"
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let NavigationViewController = storyBoard.instantiateViewController(withIdentifier: "NVC") as! NavigationViewController
-            self.present(NavigationViewController, animated:true, completion:nil)
+            let navigationViewController = storyBoard.instantiateViewController(withIdentifier: "NVC") as! navigationViewController
+            self.present(navigationViewController, animated:true, completion:nil)
         } else {
             present(loginAlert, animated: true, completion: nil)
         }
