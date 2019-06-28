@@ -37,13 +37,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainlogo" translatesAutoresizingMaskIntoConstraints="NO" id="j5R-20-EGU">
-                                <rect key="frame" x="133" y="148" width="109" height="16"/>
+                                <rect key="frame" x="133" y="148" width="109" height="122.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="idImage" image="buttonGray" translatesAutoresizingMaskIntoConstraints="NO" id="y8Z-ub-blg">
-                                <rect key="frame" x="55" y="269" width="265" height="16"/>
+                                <rect key="frame" x="55" y="375.5" width="265" height="53"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="pwImage" image="buttonGray" translatesAutoresizingMaskIntoConstraints="NO" id="8H0-vk-fKT">
-                                <rect key="frame" x="55" y="292.5" width="265" height="16"/>
+                                <rect key="frame" x="55" y="436" width="265" height="53"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="pw" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fng-tM-VaS">
                                 <rect key="frame" x="80" y="458" width="215" height="17"/>
@@ -185,7 +185,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="empty1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2u-A2-rH0">
-                                        <rect key="frame" x="0.0" y="186" width="275" height="53"/>
+                                        <rect key="frame" x="0.0" y="81" width="40" height="16"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                             <bool key="isElement" value="NO"/>
@@ -195,7 +195,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="empty2" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mn-9o-zD7">
-                                        <rect key="frame" x="0.0" y="248" width="275" height="53"/>
+                                        <rect key="frame" x="0.0" y="106" width="40" height="16"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                             <bool key="isElement" value="NO"/>
@@ -205,7 +205,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="empty3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-bI-Vsv">
-                                        <rect key="frame" x="0.0" y="310" width="275" height="53"/>
+                                        <rect key="frame" x="0.0" y="131" width="40" height="16"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                             <bool key="isElement" value="NO"/>
@@ -381,10 +381,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topboxUniv" translatesAutoresizingMaskIntoConstraints="NO" id="v4H-MM-g0W">
-                                <rect key="frame" x="179.5" y="0.0" width="16" height="16"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagebox" translatesAutoresizingMaskIntoConstraints="NO" id="16M-zW-xnR">
-                                <rect key="frame" x="51" y="86" width="273" height="16"/>
+                                <rect key="frame" x="51" y="210" width="273" height="260"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-Ch-F4J">
                                 <rect key="frame" x="64" y="222" width="252" height="235"/>
@@ -446,7 +446,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonModify" translatesAutoresizingMaskIntoConstraints="NO" id="1Rn-um-gWj">
-                                <rect key="frame" x="262" y="281" width="46" height="44"/>
+                                <rect key="frame" x="262" y="405" width="46" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="JLf-qf-4u3"/>
                                 </constraints>
