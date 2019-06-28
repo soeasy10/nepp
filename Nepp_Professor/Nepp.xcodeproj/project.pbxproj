@@ -22,6 +22,7 @@
 		67A6FD6122C49DE9009AC9BC /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD6022C49DE9009AC9BC /* ClassViewController.swift */; };
 		67A6FD6322C4AF15009AC9BC /* AttendanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD6222C4AF15009AC9BC /* AttendanceTableViewController.swift */; };
 		67A6FD6722C4BA24009AC9BC /* dataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD6622C4BA24009AC9BC /* dataCenter.swift */; };
+		67A6FDA222C5B1CF009AC9BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FDA122C5B1CF009AC9BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		67A6FD6022C49DE9009AC9BC /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		67A6FD6222C4AF15009AC9BC /* AttendanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewController.swift; sourceTree = "<group>"; };
 		67A6FD6622C4BA24009AC9BC /* dataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataCenter.swift; sourceTree = "<group>"; };
+		67A6FDA122C5B1CF009AC9BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B2E2A434664835EED59A0F9 /* Pods-NeppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeppUITests/Pods-NeppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A69A9C4D2744B69A00935BA7 /* Pods-Nepp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nepp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nepp/Pods-Nepp.release.xcconfig"; sourceTree = "<group>"; };
 		BEACA6FCB7EFA3366284E169 /* Pods-Nepp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nepp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nepp/Pods-Nepp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				6777E4AD22C3D08C0015D4AD /* LaunchScreen.storyboard */,
 				6777E4AB22C3D08C0015D4AD /* Assets.xcassets */,
 				6777E4B022C3D08C0015D4AD /* Info.plist */,
+				67A6FDA122C5B1CF009AC9BC /* GoogleService-Info.plist */,
 			);
 			path = Nepp;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6777E4AF22C3D08C0015D4AD /* LaunchScreen.storyboard in Resources */,
+				67A6FDA222C5B1CF009AC9BC /* GoogleService-Info.plist in Resources */,
 				6777E4AC22C3D08C0015D4AD /* Assets.xcassets in Resources */,
 				6777E4AA22C3D08B0015D4AD /* Main.storyboard in Resources */,
 			);

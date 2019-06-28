@@ -24,6 +24,7 @@
 		67A6FD8B22C54218009AC9BC /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD8A22C54218009AC9BC /* FrameExtractor.swift */; };
 		67A6FD9122C5468D009AC9BC /* ios_conversions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD8E22C5468D009AC9BC /* ios_conversions.mm */; };
 		67A6FD9222C5468D009AC9BC /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FD9022C5468D009AC9BC /* OpenCVWrapper.mm */; };
+		67A6FDA422C5B1E9009AC9BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A6FDA322C5B1E9009AC9BC /* GoogleService-Info.plist */; };
 		B1032A5BD393735F9BD88D22 /* Pods_Nepp_Students.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915EE519B1ACA5E9EED58D48 /* Pods_Nepp_Students.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		67A6FD8F22C5468D009AC9BC /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		67A6FD9022C5468D009AC9BC /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		67A6FD9622C54C6F009AC9BC /* Nepp_Students-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nepp_Students-Bridging-Header.h"; sourceTree = "<group>"; };
+		67A6FDA322C5B1E9009AC9BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		915EE519B1ACA5E9EED58D48 /* Pods_Nepp_Students.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nepp_Students.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54ED692DB99779CFA57EA5D /* Pods-Nepp_Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nepp_Students.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nepp_Students/Pods-Nepp_Students.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				67A6FD4722C46972009AC9BC /* Assets.xcassets */,
 				67A6FD4922C46972009AC9BC /* LaunchScreen.storyboard */,
 				67A6FD4C22C46972009AC9BC /* Info.plist */,
+				67A6FDA322C5B1E9009AC9BC /* GoogleService-Info.plist */,
 			);
 			path = Nepp_Students;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A6FD4B22C46972009AC9BC /* LaunchScreen.storyboard in Resources */,
+				67A6FDA422C5B1E9009AC9BC /* GoogleService-Info.plist in Resources */,
 				67A6FD4822C46972009AC9BC /* Assets.xcassets in Resources */,
 				67A6FD4622C4696E009AC9BC /* Main.storyboard in Resources */,
 			);
