@@ -48,7 +48,6 @@ class AttendanceViewController: UIViewController {
         print(className)
 
         if className != nil {
-            dataCenter.currentID = "20141234"
             fetchDataFromFirebase();
         }
     }
@@ -73,8 +72,8 @@ class AttendanceViewController: UIViewController {
                 }
             }
 
-
             self.attendances = self.classData[dataCenter.classDic[self.className!]!]!
+            print(self.attendances)
             self.weeks = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]
             self.childVC?.setData(weeks: self.weeks, attendances: self.attendances)
         }

@@ -27,6 +27,12 @@ class CaptureViewController: UIViewController, FrameExtractorDelegate {
         print(ocv.openCVVersionString())
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if dataCenter.recogComplete {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -74,7 +80,7 @@ class CaptureViewController: UIViewController, FrameExtractorDelegate {
 
         storageRef = Storage.storage().reference()
 
-        let uploadTask = storageRef!.child("images/" + user + "/userImage" + index + ".png").putData(png, metadata: nil) { (metadata, error) in
+        let uploadTask = storageRef!.child(user + "_Image_" + index + ".png").putData(png, metadata: nil) { (metadata, error) in
             guard let metadata = metadata else {
                 // Uh-oh, an error occurred!
                 return
@@ -101,7 +107,7 @@ class CaptureViewController: UIViewController, FrameExtractorDelegate {
 
                     print(dataCenter.imageData.count)
                     // Firebase Storage에 업로드하는 작업
-                    for i in 0...9 {
+                    for i in 1...10 {
                         uiImageToPNG(dataCenter.imageData[i], dataCenter.currentID, String(i))
                     }
 

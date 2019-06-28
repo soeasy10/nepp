@@ -64,6 +64,10 @@ class AttendanceViewController: UIViewController {
         print(dataCenter.classDic[className!]!)
 
         databaseHandle = ref?.child(dataCenter.currentID).child(dataCenter.classDic[className!]!).observe(.value) { (snapshot) in
+            self.studentNames = []
+            self.studentIDs = []
+            self.attendances = []
+
             for child in snapshot.children {
                 let snap = child as! DataSnapshot
                 self.classData[snap.key] = snap.value as! [String]

@@ -52,6 +52,28 @@ class AttendanceTableViewController: UITableViewController {
         return weekArr.count
     }
 
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath)
         guard let studentCell = cell as? studentCell else{
@@ -64,15 +86,20 @@ class AttendanceTableViewController: UITableViewController {
 
         var newAttendence:String = "미출결"
         switch attendanceArr[indexPath.row] {
-        case "0":
+        case "0": // 미출결
+            studentCell.attendanceLabel.textColor = .black
             newAttendence = "미출결"
-        case "1":
+        case "1": // 출석
+            studentCell.attendanceLabel.textColor = hexStringToUIColor(hex: "#00B27C")
             newAttendence = "출석"
-        case "2":
+        case "2": // 결석
+            studentCell.attendanceLabel.textColor = .red
             newAttendence = "결석"
-        case "3":
+        case "3": // 지각
+            studentCell.attendanceLabel.textColor = hexStringToUIColor(hex: "#FFB300")
             newAttendence = "지각"
-        case "4":
+        case "4": // 조퇴
+            studentCell.attendanceLabel.textColor = .blue
             newAttendence = "조퇴"
         default:
             print("ERROR")

@@ -19,13 +19,19 @@ class StudentInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        dataCenter.recogComplete = true
+
         profileImageView.contentMode = .scaleAspectFill
-        profileImageView.image = dataCenter.imageData[0]
+        profileImageView.image = dataCenter.imageData[1]
         majorLabel.text = dataCenter.major
         idLabel.text = dataCenter.id
         nameLabel.text = dataCenter.name
         
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func doneButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {

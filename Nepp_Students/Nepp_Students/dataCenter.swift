@@ -12,6 +12,7 @@ import UIKit
 var dataCenter:DataCenter = DataCenter()
 
 class DataCenter {
+    var recogComplete:Bool = false
     var currentID:String
     var classDic:[String:String]
     var major:String
@@ -25,6 +26,6 @@ class DataCenter {
     var id:String = ""
     var password:String = ""
 
-    var imageData:[UIImage] = []
+    var imageData:[UIImage] = [UIImage(named: "topbox")!]
     var captureSessionState:Bool = true
 }

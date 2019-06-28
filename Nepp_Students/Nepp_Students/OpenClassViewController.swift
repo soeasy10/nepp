@@ -26,11 +26,28 @@ class OpenClassViewController: UIViewController {
         faceButton.setImage(UIImage(named: "buttonFacerecog"), for: .normal)
         faceButton.setImage(UIImage(named: "buttonFacerecogHover"), for: .highlighted)
 
-
-
-
-
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func faceRecog(_ sender: Any) {
+        if dataCenter.recogComplete {
+            // 학생증 화면으로 이동
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let studentInfoViewController = storyBoard.instantiateViewController(withIdentifier: "IDView") as! StudentInfoViewController
+            self.present(studentInfoViewController, animated:true, completion:nil)
+        } else {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let captureViewController = storyBoard.instantiateViewController(withIdentifier: "CVC") as! CaptureViewController
+            self.present(captureViewController, animated:true, completion:nil)
+        }
+
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        if dataCenter.recogComplete {
+            faceButton.setImage(UIImage(named: "buttonStudentcard"), for: .normal)
+            faceButton.setImage(UIImage(named: "buttonStudentcardHover"), for: .highlighted)
+        }
     }
 
     func setNavigationBar(){

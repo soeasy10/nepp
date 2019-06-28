@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -16,20 +17,67 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // Firebase에서 ID와 비밀번호 가져오는 작업
     
-    let dbId:String = "20181234"
-    let dbPassword:String = "password"
+    var id:String = ""
+    var pw:String = ""
 
     let loginAlert = UIAlertController(title:"웁스!", message:"로그인에 실패했습니다.\r\n아이디와 패스워드를 확인해주세요.", preferredStyle: .alert)
     let loginAlertAction = UIAlertAction(title:"확인", style: .default, handler: nil)
 
+    var ref: DatabaseReference!
+    var databaseHandle:DatabaseHandle?
+
     @IBAction func loginAction(_ sender: Any) {
-        if true {
-            dataCenter.currentID = "20181234"
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let navigationViewController = storyBoard.instantiateViewController(withIdentifier: "NVC") as! navigationViewController
-            self.present(navigationViewController, animated:true, completion:nil)
+        if let idInput = idField.text {
+            id = idInput
+        }
+        if let pwInput = passwordField.text {
+            pw = pwInput
+        }
+
+        var dbPW:String = ""
+
+        if id == "" || pw == "" {
+            self.present(self.loginAlert, animated: true, completion: nil)
         } else {
-            present(loginAlert, animated: true, completion: nil)
+            ref = Database.database().reference().child("students")
+
+            databaseHandle = ref?.observe(.value) { (snapshot) in
+                for child in snapshot.children {
+                    let snap = child as! DataSnapshot
+                    switch snap.key {
+                    case self.id:
+                        dataCenter.id = self.id
+                        break
+                    default:
+                        print("ERROR: noID")
+                    }
+                }
+            }
+
+            databaseHandle = ref?.child(id).observe(.value) { (snapshot) in
+                for child in snapshot.children {
+                    let snap = child as! DataSnapshot
+                    switch snap.key {
+                    case "major":
+                        dataCenter.major = snap.value as! String
+                    case "name":
+                        dataCenter.name = snap.value as! String
+                    case "password":
+                        dbPW = snap.value as! String
+                        print(dbPW)
+                    default:
+                        print("ERROR: noPW")
+                    }
+                }
+                if self.pw == dbPW { // 아이디와 패스워드가 모두 서버에 존재하며 일치
+                    dataCenter.currentID = self.id
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                    let navigationViewController = storyBoard.instantiateViewController(withIdentifier: "NVC") as! navigationViewController
+                    self.present(navigationViewController, animated:true, completion:nil)
+                } else {
+                    self.present(self.loginAlert, animated: true, completion: nil)
+                }
+            }
         }
     }
 
