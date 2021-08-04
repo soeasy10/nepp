@@ -25,3 +25,6 @@ Nepp Student (학생용) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nepp Professor (�
 개설 과목 목록 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 수강 인원 출결 확인
 
 <img width="200" src="https://user-images.githubusercontent.com/38272356/128193978-9d747550-2abd-4dd2-9e81-aaf5915efb90.PNG">&nbsp;&nbsp;&nbsp;<img width="200" src="https://user-images.githubusercontent.com/38272356/128193981-12c070cc-e3d8-4003-b4fc-0a8a42edb635.PNG">
+
+## 발표 현장
+<img width="400" src="https://user-images.githubusercontent.com/38272356/128196185-8fe79cf2-79fe-4f58-a505-f61551c1ec7a.JPG">
